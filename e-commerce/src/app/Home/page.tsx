@@ -15,7 +15,7 @@ function HomePage() {
     <Header/>
     <Hero/>
     <FlashSales/>
-     <Categories/>
+    <Categories/>
     <SellingProducts/>
     <Products/>
     <NewArrivals/>

@@ -67,7 +67,7 @@ return(
                 <button className="bg-red-500 w-45 h-15 rounded-md mb-10 text-white ml-150">View All</button>
             </div> 
         </div>
-              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-9 px-4 w-400 mt-10">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-9 px-4 w-400 mt-10">
                 {items.map((item) => (
                   <div
                     key={item.id}
@@ -103,7 +103,49 @@ return(
                   </div>
                   </div>
                 ))}
-              </div>
+        </div>
+
+  <div className="bg-black text-white p-8 flex flex-col md:flex-row items-center mt-20 justify-between h-130">
+  <div className="flex flex-col gap-0">
+    <p className="text-green-500 text-lg">Categories</p>
+    <h2 className="text-3xl font-bold leading-snug">Enhance Your<br/> Music Experience</h2>
+    <div className="flex gap-3 mt-4">
+      <div className="flex flex-col items-center bg-white text-black rounded-full w-16 h-16 justify-center">
+        <span className="text-lg font-bold">23</span>
+        <span className="text-xs">Hours</span>
+      </div>
+      <div className="flex flex-col items-center bg-white text-black rounded-full w-16 h-16 justify-center">
+        <span className="text-lg font-bold">05</span>
+        <span className="text-xs">Days</span>
+      </div>
+      <div className="flex flex-col items-center bg-white text-black rounded-full w-16 h-16 justify-center">
+        <span className="text-lg font-bold">59</span>
+        <span className="text-xs">Minutes</span>
+      </div>
+      <div className="flex flex-col items-center bg-white text-black rounded-full w-16 h-16 justify-center">
+        <span className="text-lg font-bold">35</span>
+        <span className="text-xs">Seconds</span>
+      </div>
+    </div>
+    <button className="bg-green-500 ml-10 text-white font-semibold px-6 w-40 h-15 py-2 rounded-lg mt-6">Buy Now!</button>
+  </div>
+  <div className="mt-8">
+    <Image
+      src="/images/jbl.png"
+      alt="Speaker"
+      width={1000}
+      height={1000}
+      className="w-100 h-80 ml-neg-50"
+    />
+  </div>
+</div>
+
+
+
+
+
+
+
 
 </div>
     )

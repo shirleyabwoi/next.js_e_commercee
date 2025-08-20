@@ -6,7 +6,7 @@ interface Product {
   id: number;
   name: string;
   image: string;
-  price: number;
+  price: string;
   rating: number;
   isNew?: boolean;
   description:string
@@ -18,14 +18,14 @@ const products: Product[] = [
     name: "Dog Food",
     image: "/images/dogFood.png",
     description:"Breed Dry Dog Food",
-    price: 100,
+    price: "$100",
     rating: 5,
   },
   { id: 2,
     name: "CANON Camera",
     image: "/images/canonCamera.png",
     description:"CANON EOS Camera",
-    price: 360,
+    price:"$360",
     rating: 4,
  },
   {
@@ -33,7 +33,7 @@ const products: Product[] = [
     name: " Asus laptop",
      image: "/images/gamningMonitor.png",
      description:"ASUS FHD Gaming Laptop",
-     price: 700,
+     price: "$700",
       rating: 5,
  },
   {
@@ -41,7 +41,7 @@ const products: Product[] = [
     name: "Skincare",
     image: "/images/curology.png",
     description:"Curology Product Set",
-    price: 500,
+    price: "$500",
     rating: 5,
   },
   {
@@ -49,7 +49,7 @@ const products: Product[] = [
     name: "Electric toy-car",
     image: "/images/kidsCar.png",
     description:"Kid's Electric Car",
-    price: 960,
+    price: "$960",
     rating: 4,
     isNew: true,
     colors: ["#FF0000", "#000000"],
@@ -59,7 +59,7 @@ const products: Product[] = [
     name: "Sport Shoes",
     image: "/images/zoomSoccerShoes.png",
     description:"Jr. Zoom Soccer Cleats",
-    price: 1160,
+    price: "$960",
     rating: 5,
     colors: ["#FFFF00", "#000000"],
   },
@@ -68,7 +68,7 @@ const products: Product[] = [
     name: "Game pad",
     image: "/images/usbGamepad.png",
     description:"GP11 Shooter USB Gamepad",
-    price: 660,
+    price:"$660",
     rating: 4,
     isNew: true,
     colors: ["#FF0000", "#000000"],
@@ -78,7 +78,7 @@ const products: Product[] = [
     name: "Green jacket",
     image: "/images/satinJacket.png",
     description:"Quilted Satin Jacket</strong",
-    price: 660,
+    price: "$660",
     rating: 4,
     colors: ["#004D40", "#FF0000"],
   },

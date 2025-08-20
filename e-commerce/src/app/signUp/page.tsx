@@ -6,7 +6,7 @@ import Header from "../sharedcomponents/header";
 import Footer from "../sharedcomponents/footer";
 
 
- function SignUp() {
+function SignUp() {
     const [formData, setFormData] = useState({
         name: "",
         email: "",
@@ -26,24 +26,26 @@ import Footer from "../sharedcomponents/footer";
     const handleGoogleSignUp = () => {
         console.log("Google sign up clicked");
     };
+
+
 return (
 <div className="min-h-screen flex flex-col">
-<Header />
-    <div className="flex flex-col md:flex-row items-center md:items-start gap-20 py-12">
-     <div className="flex ml-6">
+<Header/>
+    <div className="flex flex-col md:flex-row items-center md:items-start gap-30 py-12">
+     <div className="flex">
         <Image
          src="/images/phoneCartImage.png"
          alt="Cart and a smartphone"
-         width={600}
-         height={300}
-         className="max-w-full h-auto"
+         width={800}
+         height={800}
+         className="max-w-full h-auto ml-10"
          />
      </div>
     <div className="flex-1 flex items-center p-8 lg:p-16 bg-white">
         <div className="w-full max-w-md">
          <div className="space-y-8">
             <div className="text-center lg:text-left">
-                <h1 className="text-4xl font-medium text-black mb-2">Create an account</h1>
+                <h1 className="text-4xl font-medium text-black mb-2 mt-10">Create an account</h1>
                 <p className="text-black text-base">Enter your details below</p>
             </div>
             <form onSubmit={handleSubmit} className="space-y-6">
@@ -55,7 +57,7 @@ return (
                             placeholder="Name"
                             value={formData.name}
                             onChange={handleInputChange}
-                            className="h-12 text-base border-0 border-b-2 border-gray-200 rounded-none bg-transparent px-0 focus-visible:ring-0 focus-visible:border-red-500 placeholder:text-gray-400 w-100"
+                            className="h-12 text-base border-0 border-b-2 border-neutral-300 rounded-none bg-transparent px-0 focus-visible:ring-0 focus-visible:border-red-500 placeholder:text-neutral-400 w-100"
                         />
                     </div>
             <div>
@@ -65,7 +67,7 @@ return (
                 placeholder="Email or Phone Number"
                 value={formData.email}
                 onChange={handleInputChange}
-                className="h-12 text-base border-0 border-b-2 border-gray-200 rounded-none bg-transparent px-0 focus-visible:ring-0 focus-visible:border-red-500 placeholder:text-gray-400 w-100"
+                className="h-12 text-base border-0 border-b-2 border-neutral-300 rounded-none bg-transparent px-0 focus-visible:ring-0 focus-visible:border-red-500 placeholder:text-neutral-400 w-100"
                 />
             </div>
             <div>
@@ -75,13 +77,13 @@ return (
                 placeholder="Password"
                 value={formData.password}
                 onChange={handleInputChange}
-                className="h-12 text-base border-0 border-b-2 border-gray-200 rounded-none bg-transparent px-0 focus-visible:ring-0 focus-visible:border-red-500 placeholder:text-gray-400 w-100"
+                className="h-12 text-base border-0 border-b-2 border-gray-200 rounded-none bg-transparent px-0 focus-visible:ring-0 focus-visible:border-red-500 placeholder:text-neutral-500 w-100"
               />
             </div>
         </div>
         <div className="space-y-4">
         <button type="submit" className="w-100 h-12 bg-red-500 hover:bg-red-600 text-white text-base font-medium rounded-sm">Create Account</button>
-        <button type="button" onClick={handleGoogleSignUp}className="w-full h-12 border-gray-300 text-white text-base font-medium rounded-sm hover:bg-gray-50 flex items-center justify-center gap-3">
+        <button type="button" onClick={handleGoogleSignUp}className="w-100 h-12 text-black border border-neutral-300 text-base font-medium rounded-lg flex items-center justify-center gap-3">
             <svg className="w-5 h-5" viewBox="0 0 24 24">
              <path fill="#1856b9ff" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
              <path fill="#3cd364ff" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>

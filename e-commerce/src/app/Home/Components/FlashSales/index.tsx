@@ -1,7 +1,6 @@
 "use client"
 import { IoEyeOutline } from "react-icons/io5";
-import { FaArrowRight } from "react-icons/fa6";
-import { FaArrowLeft } from "react-icons/fa6";
+import { FaArrowRight, FaArrowLeft } from "react-icons/fa6";
 import { CiHeart } from "react-icons/ci";
 import { useEffect, useState } from "react";
 import Image from "next/image";

@@ -1,7 +1,6 @@
 "use client";
 import { useState } from "react";
-import { FaArrowRight } from "react-icons/fa6";
-import { FaArrowLeft } from "react-icons/fa6";
+import { FaArrowRight, FaArrowLeft } from "react-icons/fa6";
 import { FaMobileAlt, FaLaptop, FaHeadphones, FaGamepad, FaCamera, FaClock } from "react-icons/fa";
 
 const categories = [

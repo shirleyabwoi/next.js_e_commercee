@@ -1,8 +1,4 @@
-import { FaRegPaperPlane } from "react-icons/fa6";
-import { FaFacebookF } from "react-icons/fa6";
-import { FaTwitter } from "react-icons/fa6";
-import { FaInstagram } from "react-icons/fa6";
-import { FaLinkedinIn } from "react-icons/fa6";
+import { FaRegPaperPlane, FaFacebookF,  FaTwitter, FaInstagram, FaLinkedinIn} from "react-icons/fa6";
 import { BsQrCode } from "react-icons/bs";
 import { FaApple } from "react-icons/fa";
 import Image from "next/image";
@@ -20,7 +16,7 @@ function Footer() {
               <input
                 type="email"
                 placeholder="Enter your email"
-                className="bg-transparent text-sm px-3 py-2 text-white placeholder:text-gray-400 outline-none flex-1"
+                className="bg-transparent text-sm px-3 py-2 text-white placeholder:text-neutral-400 outline-none flex-1"
               />
               <button type="submit" className="px-4 flex items-center justify-center"><FaRegPaperPlane className="text-white"></FaRegPaperPlane></button>
             </form>
@@ -74,7 +70,7 @@ function Footer() {
           </div>
           <div>
             <h2 className="text-2xl text-white font-semibold mb-6">Download App</h2>
-            <p className="text-gray-400 text-sm mb-4">Save $3 with App New User Only</p>
+            <p className="text-neutral-400 text-sm mb-4">Save $3 with App New User Only</p>
             <div className="flex space-x-3 items-center mb-4">
              <BsQrCode className="size-20 text-white"/>
               <div className="flex flex-col gap-3">
@@ -107,8 +103,8 @@ function Footer() {
             </div>
           </div>
         </div>
-        <hr className="border-gray-700 mb-4" />
-        <p className="text-center text-gray-500 text-sm pb-2">&copy; Copyright Rimel 2022. All rights reserved</p>
+        <hr className="border-neutral-700 mb-4" />
+        <p className="text-center text-neutral-500 text-sm pb-2">&copy; Copyright Rimel 2022. All rights reserved</p>
       </div>
     </div>
   );
